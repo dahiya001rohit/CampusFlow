@@ -85,19 +85,19 @@ Principles used:
 
 ### Use Case Diagram
 
-![Use Case](docs/usecase.png)
+![Use Case](docs/useCaseDigram.png)
 
 ### Sequence Diagram
 
-![Sequence](docs/sequence.png)
+![Sequence](docs/sequenceDiagram.png)
 
 ### Class Diagram
 
-![Class](docs/class.png)
+![Class](docs/ClassDigram.png)
 
 ### ER Diagram
 
-![ER](docs/er.png)
+![ER](docs/ER_Diagram.png)
 
 ---
 
