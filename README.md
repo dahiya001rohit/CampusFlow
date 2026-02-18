@@ -107,26 +107,19 @@ Principles used:
 CampusFlow/
 │
 ├── backend/
-│   ├── controllers/
-│   ├── services/
-│   ├── models/
-│   ├── routes/
-│   ├── middleware/
-│   └── utils/
-│
 ├── frontend/
 ├── docs/
-│   ├── usecase.png
-│   ├── sequence.png
-│   ├── class.png
-│   └── er.png
-│
-├── idea.md
-├── useCaseDiagram.md
-├── sequenceDiagram.md
-├── classDiagram.md
-├── ErDiagram.md
-└── README.md
+   ├──images/
+   |   ├── usecase.png
+   |   ├── sequence.png
+   |   ├── class.png
+   |   └── er.png
+   ├── idea.md
+   ├── useCaseDiagram.md
+   ├── sequenceDiagram.md
+   ├── classDiagram.md
+   ├── ErDiagram.md
+   └── README.md
 ```
 
 ---
