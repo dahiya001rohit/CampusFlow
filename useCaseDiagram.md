@@ -1,5 +1,7 @@
 # Use Case Diagram – CampusFlow
 
+![Use Case](docs/useCaseDigram.png)
+
 ## Actors
 
 * Student

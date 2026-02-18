@@ -1,5 +1,7 @@
 # ER Diagram – CampusFlow
 
+![ER](docs/ER_Diagram.png)
+
 ## Entities
 
 ### Users

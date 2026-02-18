@@ -1,5 +1,7 @@
 # Class Diagram – CampusFlow
 
+![Class](docs/ClassDigram.png)
+
 ## Core Classes
 
 * User

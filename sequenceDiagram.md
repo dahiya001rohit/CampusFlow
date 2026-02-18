@@ -1,5 +1,7 @@
 # Sequence Diagram – Booking Flow
 
+![Sequence](docs/sequenceDiagram.png)
+
 ## Scenario
 
 Student requests a resource booking and the system processes it.
