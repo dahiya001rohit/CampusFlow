@@ -1,6 +1,6 @@
 # Sequence Diagram – Booking Flow
 
-![Sequence](docs/sequenceDiagram.png)
+![Sequence](images/sequenceDiagram.png)
 
 ## Scenario
 

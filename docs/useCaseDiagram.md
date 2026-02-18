@@ -1,6 +1,6 @@
 # Use Case Diagram – CampusFlow
 
-![Use Case](docs/useCaseDigram.png)
+![Use Case](images/useCaseDigram.png)
 
 ## Actors
 

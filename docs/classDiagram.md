@@ -1,6 +1,6 @@
 # Class Diagram – CampusFlow
 
-![Class](docs/ClassDigram.png)
+![Class](images/ClassDigram.png)
 
 ## Core Classes
 

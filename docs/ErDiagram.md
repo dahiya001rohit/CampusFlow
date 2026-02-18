@@ -1,6 +1,6 @@
 # ER Diagram – CampusFlow
 
-![ER](docs/ER_Diagram.png)
+![ER](images/ER_Diagram.png)
 
 ## Entities
 
