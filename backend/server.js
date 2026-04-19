@@ -26,13 +26,19 @@ app.use('/api/stats', statsRoutes);
 // Health check
 app.get('/api/health', (req, res) => res.json({ message: 'CampusFlow API running' }));
 
-// Serve frontend in production
+// Serve frontend in production (if deployed together)
 const path = require('path');
+const fs = require('fs');
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../frontend/dist')));
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../frontend', 'dist', 'index.html'));
-  });
+  const frontendPath = path.join(__dirname, '../frontend/dist');
+  if (fs.existsSync(frontendPath)) {
+    app.use(express.static(frontendPath));
+    app.get('*', (req, res) => {
+      res.sendFile(path.join(frontendPath, 'index.html'));
+    });
+  } else {
+    app.get('/', (req, res) => res.json({ message: 'CampusFlow API running (Backend Only)' }));
+  }
 } else {
   app.get('/', (req, res) => res.json({ message: 'CampusFlow API running in dev mode' }));
 }
