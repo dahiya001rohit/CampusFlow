@@ -147,3 +147,48 @@ This project emphasizes:
 ## 👨‍💻 Author
 
 CampusFlow – SESD Milestone Project
+
+---
+
+## 🛠 Setup & Running Locally
+
+### Prerequisites
+* Node.js (v16 or higher)
+* MongoDB (running locally or a cloud URI)
+
+### Instructions
+1. Install dependencies for both backend and frontend:
+   ```bash
+   cd backend && npm install
+   cd ../frontend && npm install
+   ```
+2. In the `backend` folder, create a `.env` file containing:
+   ```env
+   PORT=8000
+   MONGO_URI=mongodb://localhost:27017/campusflow
+   JWT_SECRET=your_jwt_secret_here
+   NODE_ENV=development
+   ```
+3. Seed the database with sample data:
+   ```bash
+   cd backend && npm run seed
+   ```
+4. Start both servers (open in separate terminals):
+   ```bash
+   cd backend && npm run dev
+   cd frontend && npm run dev
+   ```
+5. Open your browser to `http://localhost:3000`
+
+---
+
+## 🔑 Demo Credentials
+If you seeded the database successfully, you can use the following default credentials to test the application:
+
+**Admin Role:**
+* Email: `admin@campusflow.com`
+* Password: `admin123`
+
+**Student Role:**
+* Email: `rohit@college.edu` (or `priya@college.edu`)
+* Password: `student123`

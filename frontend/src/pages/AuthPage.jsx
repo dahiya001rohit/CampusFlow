@@ -74,9 +74,6 @@ export default function AuthPage() {
           </button>
         </form>
 
-        <p style={{ marginTop: 16, textAlign: 'center', fontSize: '0.78rem', color: 'var(--text-muted)' }}>
-          Default admin: <strong>admin@campusflow.com</strong> / <strong>admin123</strong>
-        </p>
       </div>
     </div>
   );
