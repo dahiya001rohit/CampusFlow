@@ -24,7 +24,18 @@ app.use('/api/complaints', complaintRoutes);
 app.use('/api/stats', statsRoutes);
 
 // Health check
-app.get('/', (req, res) => res.json({ message: 'CampusFlow API running' }));
+app.get('/api/health', (req, res) => res.json({ message: 'CampusFlow API running' }));
+
+// Serve frontend in production
+const path = require('path');
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../frontend/dist')));
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../frontend', 'dist', 'index.html'));
+  });
+} else {
+  app.get('/', (req, res) => res.json({ message: 'CampusFlow API running in dev mode' }));
+}
 
 // Error handler
 app.use((err, req, res, _next) => {
